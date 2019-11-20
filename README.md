@@ -5,7 +5,7 @@ by a computer
 
 ### Usage
 ```python
-import priyomScraper as ps
+import priyomScrape as ps
 
 scraper = ps.PriyomScrape()
 
