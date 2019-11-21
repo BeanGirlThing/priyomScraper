@@ -38,8 +38,7 @@ class PriyomScrape(object):
             match = re.findall(self.nextTrafficPattern,text)
             match = match[0]
             atag = item.find_element_by_xpath("./a")
-            print(atag.get_attribute("href"))
-            output.append({"stationID":match[0],"frequency":match[1],"mode:":match[2],"addInfo":match[3],"href":atag.get_attribute("href")})
+            output.append({"stationID":match[0],"frequency":match[1],"mode":match[2],"addInfo":match[3],"href":atag.get_attribute("href")})
 
 
         output.append({"TTN": ttn})
